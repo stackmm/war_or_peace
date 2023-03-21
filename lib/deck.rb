@@ -22,7 +22,7 @@ class Deck
   end
 
   def percent_high_ranking
-    (high_ranking_cards.length / @cards.length) * 100
+    (high_ranking_cards.length.fdiv(@cards.length) * 100).round(2)
   end
 
   def remove_card
