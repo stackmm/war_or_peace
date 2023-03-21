@@ -1,6 +1,7 @@
 require 'rspec'
 require './lib/card'
 
+
 RSpec.describe Card do
   it "exists" do
     card = Card.new(:diamond, 'Queen', 12)
@@ -15,4 +16,9 @@ RSpec.describe Card do
     expect(card.value).to eq('Queen')
     expect(card.rank).to eq(12)
   end
+
 end
+
+require "pry"; binding.pry
+
+
