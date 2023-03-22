@@ -23,8 +23,6 @@ RSpec.describe Deck do
     expect(deck.cards).to be_an(Array)
     expect(deck.cards).to eq([card1, card2, card3])
   end
-  # expect(deck.rank_of_card_at(0)).to eq(12)
-  # expect(deck.rank_of_card_at(2)).to eq(14)
 
   it "can get rank of card at specific index in array" do
     card1 = Card.new(:diamond, 'Queen', 12)

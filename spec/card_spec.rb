@@ -19,6 +19,6 @@ RSpec.describe Card do
 
 end
 
-require "pry"; binding.pry
+
 
 
