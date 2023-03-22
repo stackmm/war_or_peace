@@ -10,13 +10,13 @@ class Turn
 
   def winner
     if @type == :basic
-      if player1.rank_of_card_at(0) > player2.rank_of_card_at(0)
+      if @player1.deck.rank_of_card_at(0) > @player2.deck.rank_of_card_at(0)
         player1
       else
         player2
       end
     elsif @type == :war
-      if player1.rank_of_card_at(2) > player2.rank_of_card_at(2)
+      if @player1.deck.rank_of_card_at(2) > @player2.deck.rank_of_card_at(2)
         player1
       else
         player2
