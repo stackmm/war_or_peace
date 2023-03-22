@@ -25,17 +25,6 @@ RSpec.describe Player do
     expect(player.deck).to eq(deck)
   end
 
-  # it "can remove the top card from the player's deck" do
-  #   card1 = Card.new(:diamond, 'Queen', 12)
-  #   card2 = Card.new(:spade, '3', 3)
-  #   card3 = Card.new(:heart, 'Ace', 14)
-  #   deck = Deck.new([card1, card2, card3])
-  #   player = Player.new('Clarisa', deck)
-
-  #   expect(player.deck.remove_card).to eq(card1)
-    
-  # end
-
   it "can remove cards from player's deck and check to see if empty" do
     card1 = Card.new(:diamond, 'Queen', 12)
     card2 = Card.new(:spade, '3', 3)
