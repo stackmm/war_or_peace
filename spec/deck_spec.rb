@@ -72,5 +72,18 @@ RSpec.describe Deck do
     expect(deck.high_ranking_cards).to eq([card3])
   end
 
+  it "can add a card to the top of the deck" do
+    card1 = Card.new(:diamond, 'Queen', 12)
+    card2 = Card.new(:spade, '3', 3)
+    card3 = Card.new(:heart, 'Ace', 14)
+    cards = [card1, card2, card3]
+    deck = Deck.new(cards)
+
+    card4 = Card.new(:diamond, '5', 5)
+    deck.add_card(card4)
+    expect(deck.cards).to eq([card1, card2, card3, card4])
+    expect(deck.rank_of_card_at(3)).to eq(5)
+  end
+
   # require "pry"; binding.pry
 end
