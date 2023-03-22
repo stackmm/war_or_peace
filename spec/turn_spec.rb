@@ -49,6 +49,11 @@ RSpec.describe Turn do
       expect(turn.type).to eq(:basic)
     end
 
+    it "can determine winner" do
+
+    end
+
+    
   end
 
 end
