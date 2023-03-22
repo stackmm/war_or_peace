@@ -10,5 +10,4 @@ class Player
     @deck.cards.empty?
   end
 
-
 end
