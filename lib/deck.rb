@@ -6,18 +6,20 @@ class Deck
   end
 
   def rank_of_card_at(index)
-    @cards[index].rank
+    if cards[index].nil?
+      0
+    else
+      @cards[index].rank
+    end
   end
 
   def high_ranking_cards
     high_ranking_cards = []
-
     @cards.each do |card|
       if card.rank >= 11
         high_ranking_cards << card
       end
     end
-
     high_ranking_cards
   end
 
@@ -26,7 +28,7 @@ class Deck
   end
 
   def remove_card
-    @cards.shift
+    @cards.delete_at(0)
   end
 
   def add_card(card)
