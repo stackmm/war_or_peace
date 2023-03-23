@@ -51,6 +51,7 @@ class Turn
     @spoils_of_war.each do |card|
       winner.deck.add_card(card)
     end
+    @spoils_of_war.clear
   end
 
 end
